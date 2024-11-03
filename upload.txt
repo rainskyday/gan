@@ -1,0 +1,12 @@
+git config core.autocrlf
+
+git add .
+git commit -m "upload"
+git push --set-upstream origin main
+
+git push
+
+git config --global http.proxy 127.0.0.1:7890
+git config --global https.proxy 127.0.0.1:7890
+
+git rm -r --cached 复刻代码/5、pix2pix
